@@ -1,8 +1,4 @@
-#baseURL = 'http://example.org/'
-#languageCode = 'en-us'
-#title = 'My New Hugo Site'
-
-baseURL = ""
+baseURL = "https://salvatorenasca.com"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "LoveIt"
