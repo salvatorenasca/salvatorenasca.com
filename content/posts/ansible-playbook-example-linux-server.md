@@ -6,6 +6,10 @@ draft: false
 
 **This is an example of an Ansible Playbook to deploy a Linux Server with a Public Key for SSH.**
 
+
+{{< highlight yaml >}}
+---
+
 - hosts: all
   become: true
   tasks:
@@ -40,3 +44,5 @@ draft: false
       key: "{{ ssh_public_key }}"
     vars:
       ssh_public_key: "ssh-rsa AAAAB...Z user@example.com"
+
+ {{< /highlight >}}     
