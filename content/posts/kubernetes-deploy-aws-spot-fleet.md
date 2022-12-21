@@ -108,4 +108,6 @@ spec:
     namespace: default
 
 
+ {{< /highlight >}}
+
 ***This manifest will create a Kubernetes service that exposes a load balancer, a deployment with 8 replicas of the my-app application, and a spot fleet with a minimum of 1 and a maximum of 8 instances. The spot fleet will use c5.large, m5.large, and r5.large instance types and will be launched in the us-west-2a, us-west-2b, and us-west-2***
