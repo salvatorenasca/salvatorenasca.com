@@ -5,7 +5,7 @@ draft: false
 ---
 The MASA Architecture.
 
-![masa](/post/images/masa_architecture.jpg)
+![masa](/posts/images/masa_architecture.jpg)
 
 What is it?
 
