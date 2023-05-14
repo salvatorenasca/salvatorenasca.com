@@ -5,7 +5,7 @@ draft: false
 ---
 The MASA Architecture.
 
-{{ $image := resources.Get "images/masa_architecture.jpg" }}
+![masa](/post/images/masa_architecture.jpg)
 
 What is it?
 
