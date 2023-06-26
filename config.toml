@@ -10,18 +10,6 @@ title = "Salvatore Nasca Piscitelli WebSite"
 languageCode = "en"
 # language name ["English", "简体中文", "Français", "Polski", ...]
 languageName = "English"
-# whether to include Chinese/Japanese/Korean
-hasCJKLanguage = false
-
-# default amount of posts in each pages
-paginate = 12
-# google analytics code [UA-XXXXXXXX-X]
-googleAnalytics = "UA-268151072-1"
-# copyright description used only for seo schema
-copyright = ""
-
-# ignore some build errors
-ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 # Author config
 [author]
@@ -61,6 +49,16 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 #######################
 
+# default amount of posts in each pages
+paginate = 12
+# google analytics code [UA-XXXXXXXX-X]
+# googleAnalytics = "UA-268151072-1"
+googleAnalytics = "G-TER1VS5FYE"
+# copyright description used only for seo schema
+copyright = ""
+# ignore some build errors
+ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
+
 [params]
   # site default theme ["auto", "light", "dark"]
   defaultTheme = "auto"
@@ -77,6 +75,37 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   description = "Website sobre Tecnología, AWS, Linux, MacOS y otras curiosidades"
   # website images for Open Graph and Twitter Cards
   #images = ["/logo.png"]
+
+#  Analytics config
+  [params.analytics]
+    enable = true
+    # Google Analytics
+    [params.analytics.google]
+      id = "G-TER1VS5FYE"
+      SiteVerificationTag = "G-TER1VS5FYE" 
+      # whether to anonymize IP
+      anonymizeIP = true
+    # Fathom Analytics
+    [params.analytics.fathom]
+      id = ""
+      # server url for your tracker if you're self hosting
+      server = ""
+    # Plausible Analytics
+    [params.analytics.plausible]
+      dataDomain = ""
+    # Yandex Metrica
+    [params.analytics.yandexMetrica]
+      id = ""
+
+  #  Cookie consent config
+  [params.cookieconsent]
+    enable = true
+    # text strings used for Cookie consent banner
+    [params.cookieconsent.content]
+      message = ""
+      dismiss = ""
+      link = ""
+
 
   # Header config
   [params.header]
