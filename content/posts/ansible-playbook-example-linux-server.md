@@ -1,6 +1,15 @@
 ---
 title: "Ansible Playbook Example - Linux Server deployment with SSH Public Key"
 date: 2022-12-12T11:33:23-03:00
+description: "An Ansible Playbook that deploys a Linux Server"
+categories:
+  - Linux
+  - Devops
+tags:
+  - Cloud
+  - OnPremise
+  - Ansible
+  - Linux
 draft: false
 ---
 

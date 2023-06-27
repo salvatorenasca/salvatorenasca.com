@@ -1,6 +1,13 @@
 ---
 title: "What Is Aws"
 date: 2022-12-12T11:13:48-03:00
+description: "What Is AWS for non-tech"
+categories:
+  - Cloud
+tags:
+  - Amazon
+  - AWS
+  - Cloud
 draft: false
 ---
 

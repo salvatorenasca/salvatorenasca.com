@@ -1,7 +1,16 @@
 ---
 title: "Masa Architecture"
 date: 2023-05-14T11:29:22-04:00
+description: "What Is MASA - Mesh Apps and Service Architecture"
+categories:
+  - Solutions Architect
+tags:
+  - Micro Services
+  - Architecture
+  - Cloud
+  - OnPremise
 draft: false
+
 ---
 ![masa](/posts/images/masa_architecture.jpg)
 

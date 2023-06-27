@@ -1,19 +1,28 @@
-baseURL = "https://salvatorenasca.com"
+############################ Default configuration #########################
+baseURL = "https://salvatorenasca.com/"
+title = "Salvatore Nasca | Solutions Architect"
 
-# Change the default theme to be use when building the site with Hugo
+# theme
 theme = "LoveIt"
-
-# website title
-title = "Salvatore Nasca Piscitelli WebSite"
 
 # language code ["en", "zh-CN", "fr", "pl", ...]
 languageCode = "en"
 # language name ["English", "简体中文", "Français", "Polski", ...]
 languageName = "English"
 
+# default amount of posts in each pages
+paginate = 10
+# google analytics code [UA-XXXXXXXX-X]
+googleAnalytics = 'G-TER1VS5FYE'
+# copyright description used only for seo schema
+copyright = "2023"
+
+# ignore some build errors
+ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
+
 # Author config
 [author]
-  name = "Salvatore Nasca Piscitelli"
+  name = "Salvatore Nasca"
   email = "salvatore@nasca.me"
   link = ""
 
@@ -29,7 +38,7 @@ languageName = "English"
     name = "Posts"
     url = "/posts/"
     # title will be shown when you hover on this menu link
-    title = ""
+    title = "Blog Posts"
   [[menu.main]]
     weight = 2
     identifier = "tags"
@@ -47,18 +56,6 @@ languageName = "English"
     url = "/categories/"
     title = ""
 
-#######################
-
-# default amount of posts in each pages
-paginate = 12
-# google analytics code [UA-XXXXXXXX-X]
-# googleAnalytics = "UA-268151072-1"
-googleAnalytics = 'G-TER1VS5FYE'
-# copyright description used only for seo schema
-copyright = ""
-# ignore some build errors
-ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
-
 [params]
   # site default theme ["auto", "light", "dark"]
   defaultTheme = "auto"
@@ -70,11 +67,12 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   #  date format
   dateFormat = "2006-01-02"
   # website title for Open Graph and Twitter Cards
-  title = "Salvatore Nasca Piscitelli Website"
+  title = "Salvatore Nasca Website"
   # website description for RSS, SEO, Open Graph and Twitter Cards
-  description = "Website sobre Tecnología, AWS, Linux, MacOS y otras curiosidades"
+  description = "Website about Tech, Cool Stuff and Life Hacks"
   # website images for Open Graph and Twitter Cards
   #images = ["/logo.png"]
+  favicon = "/static/favicon/favicon.ico"
 
 #  Analytics config
   [params.analytics]
@@ -116,15 +114,15 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     #  Header title config
     [params.header.title]
       # URL of the LOGO
-      logo = ""
+      logo = "/images/logo_sn_1.png"
       # title name
-      name = ""
+      name = "salvatorenasca.com"
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
       post = ""
       #  whether to use typeit animation for title name
-      typeit = false
+      typeit = true
 
   # Footer config
   [params.footer]
@@ -147,7 +145,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   #  Section (all posts) page config
   [params.section]
     # special amount of posts in each section page
-    paginate = 20
+    paginate = 10
     # date format (month and day)
     dateFormat = "01-02"
     # amount of RSS pages
@@ -156,7 +154,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   #  List (category or tag) page config
   [params.list]
     # special amount of posts in each list page
-    paginate = 20
+    paginate = 10
     # date format (month and day)
     dateFormat = "01-02"
     # amount of RSS pages
@@ -196,9 +194,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # URL of avatar shown in home page
       avatarURL = "/images/avatar580.png"
       #  title shown in home page (HTML format is supported)
-      title = "<h1><em>Salvatore Nasca Piscitelli</em></h1>"
+      title = "<h1><em>Salvatore Nasca</em></h1>"
       # subtitle shown in home page (HTML format is supported)
-      subtitle = "Website sobre Tecnología, AWS, Linux, MacOS y otras curiosidades.."
+      subtitle = "Website about Tech, Cool Stuff and Life Hacks"
       # whether to use typeit animation for subtitle
       typeit = false
       # whether to show social links
@@ -209,7 +207,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     [params.home.posts]
       enable = true
       # special amount of posts in each home posts page
-      paginate = 6
+      paginate = 10
       #  replaced with hiddenFromHomePage in params.page
       # default behavior when you don't set "hiddenFromHomePage" in front matter
       defaultHiddenFromHomePage = false
@@ -292,4 +290,125 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     Email = "salvatore@nasca.me"
     RSS = true # 
 
+    [params.page.share]
+      enable = true
+      Twitter = true
+      Facebook = true
+      Linkedin = true
+      Whatsapp = true
+      Pinterest = false
+      Tumblr = false
+      HackerNews = false
+      Reddit = false
+      VK = false
+      Buffer = false
+      Xing = false
+      Line = false
+      Instapaper = false
+      Pocket = false
+      Flipboard = false
+      Weibo = false
+      Blogger = false
+      Baidu = false
+      Odnoklassniki = false
+      Evernote = false
+      Skype = false
+      Trello = false
+      Mix = false
+    # LoveIt CHANGED | 0.2.0 Comment config
+    [params.page.comment]
+      enable = false
+      # Disqus comment config
+      [params.page.comment.disqus]
+        # LoveIt NEW | 0.1.1
+        enable = false
+        # Disqus shortname to use Disqus in posts
+        shortname = ""
+      # Gitalk comment config
+      [params.page.comment.gitalk]
+        # LoveIt NEW | 0.1.1
+        enable = false
+        owner = ""
+        repo = ""
+        clientId = ""
+        clientSecret = ""
+      # Valine comment config
+      [params.page.comment.valine]
+        enable = false
+        appId = ""
+        appKey = ""
+        placeholder = ""
+        avatar = "mp"
+        meta= ""
+        pageSize = 10
+        # automatically adapt the current theme i18n configuration when empty
+        lang = ""
+        visitor = true
+        recordIP = true
+        highlight = true
+        enableQQ = false
+        serverURLs = ""
+        # LoveIt NEW | 0.2.6 emoji data file name, default is "google.yml"
+        # ["apple.yml", "google.yml", "facebook.yml", "twitter.yml"]
+        # located in "themes/LoveIt/assets/lib/valine/emoji/" directory
+        # you can store your own data files in the same path under your project:
+        # "assets/lib/valine/emoji/"
+        emoji = ""
+      # Facebook comment config
+      [params.page.comment.facebook]
+        enable = false
+        width = "100%"
+        numPosts = 10
+        appId = ""
+        # automatically adapt the current theme i18n configuration when empty
+        languageCode = ""
+      # LoveIt NEW | 0.2.0 Telegram comments config
+      [params.page.comment.telegram]
+        enable = false
+        siteID = ""
+        limit = 5
+        height = ""
+        color = ""
+        colorful = true
+        dislikes = false
+        outlined = false
+      # LoveIt NEW | 0.2.0 Commento comment config
+      [params.page.comment.commento]
+        enable = false
+      # LoveIt NEW | 0.2.5 utterances comment config
+      [params.page.comment.utterances]
+        enable = false
+        # owner/repo
+        repo = ""
+        issueTerm = "pathname"
+        label = ""
+        lightTheme = "github-light"
+        darkTheme = "github-dark"
+      # giscus comment config (https://giscus.app/)
+      [params.page.comment.giscus]
+        # You can refer to the official documentation of giscus to use the following configuration.
+        enable = false
+        repo = ""
+        repoId = ""
+        category = "Announcements"
+        categoryId = ""
+        # automatically adapt the current theme i18n configuration when empty
+        lang = ""
+        mapping = "pathname"
+        reactionsEnabled = "1"
+        emitMetadata = "0"
+        inputPosition = "bottom"
+        lazyLoading = false
+        lightTheme = "light"
+        darkTheme = "dark"
 
+  #  TypeIt config
+  [params.typeit]
+    # typing speed between each step (measured in milliseconds)
+    speed = 100
+    # blinking speed of the cursor (measured in milliseconds)
+    cursorSpeed = 1000
+    # character used for the cursor (HTML format is supported)
+    cursorChar = "_"
+    # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
+    duration = -1

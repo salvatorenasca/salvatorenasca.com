@@ -1,6 +1,15 @@
 ---
 title: "Kubernetes Deploy Aws Spot Fleet"
 date: 2022-12-21T16:27:22-03:00
+description: "A Kubernetes manifest that deploys a spot fleet with HA in AWS"
+categories:
+  - Cloud
+  - Devops
+tags:
+  - Amazon
+  - AWS
+  - Cloud
+  - Kubernetes
 draft: false
 ---
 
