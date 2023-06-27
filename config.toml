@@ -53,7 +53,7 @@ languageName = "English"
 paginate = 12
 # google analytics code [UA-XXXXXXXX-X]
 # googleAnalytics = "UA-268151072-1"
-googleAnalytics = "G-TER1VS5FYE"
+googleAnalytics = 'G-TER1VS5FYE'
 # copyright description used only for seo schema
 copyright = ""
 # ignore some build errors
@@ -81,8 +81,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     enable = true
     # Google Analytics
     [params.analytics.google]
-      id = "G-TER1VS5FYE"
-      SiteVerificationTag = "G-TER1VS5FYE" 
+      id = 'G-TER1VS5FYE'
+      SiteVerificationTag = 'G-TER1VS5FYE' 
       # whether to anonymize IP
       anonymizeIP = false
     # Fathom Analytics
