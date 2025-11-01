@@ -11,7 +11,6 @@ languageCode = "en"
 languageName = "English"
 
 # default amount of posts in each pages
-paginate = 10
 # google analytics code [UA-XXXXXXXX-X]
 googleAnalytics = 'G-TER1VS5FYE'
 # copyright description used only for seo schema
